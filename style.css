@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(90deg, #d9b3e2 0.000%, #d2a4e3 8.333%, #ca94e2 16.667%, #c183e1 25.000%, #b673de 33.333%, #aa63da 41.667%, #9d54d5 50.000%, #9047ce 58.333%, #833cc7 66.667%, #7533bf 75.000%, #692eb7 83.333%, #5d2bae 91.667%, #522ca4 100.000%);
+
+}
+.quiz-card{
+    margin-top: 30vh;
+   height: 400px;
+   width: 650px; 
+}
+
