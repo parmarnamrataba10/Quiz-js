@@ -62,16 +62,43 @@ let quizQuestions = [
     }
 ];
 
-const qns = document.getElementById("qns");
-var currentIndex = 0;
-
-function questionNumber(){
-
-    qns.innerText = quizData[currentIndex].qns;
 
 
+let currentIndex = 0;
+
+const qnsNum = document.getElementById("qnsNum")
+
+const currentQuestion = quizQuestions[currentIndex]
+
+const options =document.getElementById("options")
+
+function loadQuestion(){
+
+    const qns = document.getElementById("qns");
+
+qns.innerText = quizQuestions[currentIndex].question;
+
+qnsNum.innerText = ` qns ${currentIndex+1} / ${quizQuestions.length}`
+
+options.innerHTML=""
+
+currentQuestion.options.forEach((opt,index)=>{
+
+    let col = document.createElement("div")
+
+    col.classList.add("col-md-6")
+
+    let button =document.createElement("button")
+
+        button.innerText = opt;
+
+    button.classList.add("btn","btn-outline-primary","option-btn")
+
+    options.appendChild(col);
+
+    col.appendChild(button);
+})
 
 }
-questionNumber()
-
+loadQuestion()
 

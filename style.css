@@ -9,7 +9,13 @@ body{
 }
 .quiz-card{
     margin-top: 30vh;
-   height: 400px;
+   height: 450px;
    width: 650px; 
+}
+.option-btn{
+
+    height:50px;
+    width: 200px;
+    margin: 12px;
 }
 
